@@ -1,0 +1,38 @@
+{
+  "provincia": "Santa Fe",
+  "modelo": "SARIMA",
+  "order": [
+    1,
+    1,
+    2
+  ],
+  "seasonal_order": [
+    1,
+    1,
+    1,
+    12
+  ],
+  "test_meses": 12,
+  "datos_rango": [
+    "2000-01-01",
+    "2026-09-01"
+  ],
+  "test_rango": [
+    "2025-10-01",
+    "2026-09-01"
+  ],
+  "metricas_test": {
+    "MAE": 687.7361901489493,
+    "MAPE": 5.2863304244590426
+  },
+  "entrenado_con": "serie completa (train + test)",
+  "formato": "params + serie; se reconstruye con SARIMAX.smooth (liviano)",
+  "peso_kb": 8.6,
+  "fecha_entrenamiento": "2026-10-17T07:14:18+00:00",
+  "versiones": {
+    "python": "3.12.6",
+    "pandas": "3.0.6",
+    "statsmodels": "0.15.0"
+  },
+  "seed": 42
+}

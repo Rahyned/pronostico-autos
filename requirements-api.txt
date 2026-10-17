@@ -1,0 +1,9 @@
+# Dependencias SOLO de runtime de la API (imagen Docker liviana).
+# No incluye matplotlib (graficos de entrenamiento) ni prophet (entrenamiento)
+# ni jupyterlab. La API importa unicamente src/predict.py + src/model.py.
+
+pandas>=2.2
+numpy>=1.26
+statsmodels>=0.14   # para reconstruir el SARIMA al pronosticar
+fastapi>=0.110
+uvicorn>=0.29

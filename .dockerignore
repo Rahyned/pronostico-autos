@@ -1,0 +1,27 @@
+# Lo que NO queremos meter en la imagen Docker.
+.venv/
+venv/
+env/
+
+# Datos crudos (no hacen falta en runtime: la API lee models/)
+data/
+
+# Cosas de desarrollo
+notebooks/
+reports/
+tests/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Git y editores
+.git/
+.gitignore
+.DS_Store
+.vscode/
+.idea/
+
+# Documentacion / CI (no necesarios para correr la API)
+README.md
+render.yaml

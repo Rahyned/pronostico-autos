@@ -1,0 +1,6 @@
+# Normaliza finales de linea. Dockerfile y .sh en LF (para el contenedor).
+* text=auto
+Dockerfile text eol=lf
+*.sh text eol=lf
+*.png binary
+*.pkl binary

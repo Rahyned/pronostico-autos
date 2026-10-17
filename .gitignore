@@ -1,0 +1,24 @@
+# Entorno virtual
+.venv/
+venv/
+env/
+
+# Datos crudos: no versionamos el CSV, se regenera con src/download_data.py
+data/*.csv
+
+# Modelos: el .pkl es liviano (~9 KB) y esta versionado para el deploy.
+# Los *.joblib no se usan; si aparecieran, se ignoran.
+models/*.joblib
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Sistema / editores
+.DS_Store
+.vscode/
+.idea/

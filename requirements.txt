@@ -1,0 +1,13 @@
+# Dependencias del proyecto "pronostico-autos".
+# Las agregamos por etapa. Por ahora, lo mínimo para la Etapa 1.
+
+pandas>=2.2
+requests>=2.31
+matplotlib>=3.8
+jupyterlab>=4.0
+statsmodels>=0.14      # SARIMA
+prophet>=1.1           # Prophet
+fastapi>=0.110         # API
+uvicorn>=0.29          # servidor de la API
+pytest>=8.0            # tests
+httpx>=0.27            # cliente de test para FastAPI

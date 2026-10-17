@@ -1,0 +1,10 @@
+# Blueprint de Render (https://render.com/docs/blueprint-spec).
+# Deploy gratis: Web Service con Dockerfile, se duerme tras ~15 min de inactividad.
+services:
+  - type: web
+    name: pronostico-autos
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeploy: true
