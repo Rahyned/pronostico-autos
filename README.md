@@ -121,6 +121,9 @@ cargar_metricas("Santa Fe")                 # metricas de los 3 modelos
 
 ## API
 
+En producción: https://pronostico-autos.onrender.com — documentación en
+https://pronostico-autos.onrender.com/docs. La consume el **Panel** (server-to-server).
+
 ```bash
 uvicorn api.main:app --reload      # http://127.0.0.1:8000  (docs en /docs)
 pytest                             # corre los tests
@@ -156,7 +159,13 @@ docker run -p 8000:8000 pronostico-autos
 
 El servicio está desplegado en **Render** (plan free):
 
-**URL:** `https://pronostico-autos.onrender.com` _(reemplazar por la URL real tras el deploy)_
+**URL:** https://pronostico-autos.onrender.com
+
+**Documentación interactiva (Swagger UI):** https://pronostico-autos.onrender.com/docs
+
+Está API la consume mi **Panel**, server-to-server (por eso no habilito CORS);
+en particular usa el endpoint [`/metricas`](https://pronostico-autos.onrender.com/metricas?provincia=Santa%20Fe)
+para mostrar la comparación de modelos.
 
 > **Nota importante:** en el plan free Render **duerme el servicio tras ~15 minutos
 > sin uso**. La **primera respuesta después de dormido tarda ~30-60 segundos**
