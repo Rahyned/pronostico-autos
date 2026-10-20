@@ -3,8 +3,9 @@
 Pronostico de las **transferencias mensuales de automotores en Argentina**, a partir
 del CSV oficial de la DNRPA, con una API para consultar los pronosticos.
 
-Proyecto de portfolio de ciencia de datos. Empezamos con **Santa Fe** y luego
-extendemos a todas las provincias.
+Proyecto de portfolio de ciencia de datos. Por ahora el pipeline está
+implementado para **Santa Fe**; extenderlo a todas las provincias es un próximo
+paso (ver [Etapas](#etapas)).
 
 ## Datos
 
@@ -163,7 +164,7 @@ El servicio está desplegado en **Render** (plan free):
 
 **Documentación interactiva (Swagger UI):** https://pronostico-autos.onrender.com/docs
 
-Está API la consume mi **Panel**, server-to-server (por eso no habilito CORS);
+Esta API la consume mi **Panel**, server-to-server (por eso no habilito CORS);
 en particular usa el endpoint [`/metricas`](https://pronostico-autos.onrender.com/metricas?provincia=Santa%20Fe)
 para mostrar la comparación de modelos.
 
@@ -190,3 +191,4 @@ nada: solo sirve los pronósticos.
 - [x] **4.** Guardar el mejor modelo y hacer `train.py` reproducible.
 - [x] **5.** API FastAPI (`/pronostico`, `/health`, `/metricas`) + tests con pytest.
 - [x] **6.** Docker, deploy en Render y README final con resultados.
+- [ ] **7.** Extender el pipeline a todas las provincias (hoy solo Santa Fe).

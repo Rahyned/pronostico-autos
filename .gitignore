@@ -18,6 +18,11 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
+# Secretos / variables de entorno
+.env
+.env.*
+!.env.example
+
 # Sistema / editores
 .DS_Store
 .vscode/
